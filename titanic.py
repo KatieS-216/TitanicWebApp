@@ -29,7 +29,7 @@ with col2:
       y='Fare',
       color = 'Survived',
       tooltip = ['Age','Fare','Survived','Name']
-  )
+  ).interactive()
 
   st.altair_chart(scatter_class)
 
@@ -39,6 +39,6 @@ with col3:
   hist_fare = alt.Chart(data).mark_bar().encode(
       alt.X("Fare:Q", bin=True),
       y='count'
-  ).interactive()
+  )
 
   st.altair_chart(hist_fare)
