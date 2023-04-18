@@ -31,7 +31,7 @@ with col2:
       tooltip = ['Age','Fare','Survived','Name']
   ).interactive()
 
-  st.altair_chart(scatter_class)
+  st.altair_chart(scatter_age)
 
 with col3:
   # CHART 3 - HISTOGRAM OF FARE
