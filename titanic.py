@@ -22,10 +22,10 @@ with col1:
   st.altair_chart(hist_class)
 
 with col2:
-  # CHART 2 - SCATTERPLOT OF CLASS & FARE
+  # CHART 2 - SCATTERPLOT OF AGE & FARE
 
-  scatter_class = alt.Chart(data).mark_circle().encode(
-      x='Pclass',
+  scatter_age = alt.Chart(data).mark_circle().encode(
+      x='Age',
       y='Fare',
       color = 'Survived',
       tooltip = ['Age','Fare','Survived','Name']
