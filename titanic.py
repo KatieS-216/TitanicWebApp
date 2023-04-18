@@ -15,7 +15,7 @@ with col1:
   # CHART 1 - HISTOGRAM OF CLASS
 
   hist_class = alt.Chart(data).mark_bar().encode(
-      alt.X("Class:Q", bin=True),
+      alt.X("Pclass:Q", bin=True),
       y='count()'
   )
 
