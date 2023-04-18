@@ -16,7 +16,7 @@ with col1:
 
   hist_class = alt.Chart(data).mark_bar().encode(
       alt.X("Class:Q", bin=True),
-      y='count'
+      y='count()'
   )
 
   st.altair_chart(hist_class)
@@ -38,7 +38,7 @@ with col3:
 
   hist_fare = alt.Chart(data).mark_bar().encode(
       alt.X("Fare:Q", bin=True),
-      y='count'
+      y='count()'
   )
 
   st.altair_chart(hist_fare)
